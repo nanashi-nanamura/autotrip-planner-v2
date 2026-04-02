@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen antialiased text-slate-100;
+    background-color: #0f172a;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply border border-white/10 bg-white/5 shadow-card backdrop-blur-xl;
+  }
+
+  .glass-strong {
+    @apply border border-white/15 bg-white/10 shadow-card backdrop-blur-2xl;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-text bg-clip-text text-transparent;
+  }
+}
